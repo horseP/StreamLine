@@ -85,7 +85,7 @@ body{
 .toggle-ball{
     width: 18px;
     height: 18px;
-    background-color: black;
+    background-color: green;
     position: absolute;
     right: 1px;
     border-radius: 50%;
