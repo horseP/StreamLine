@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <h1>Admin Page</h1>
+  
+  <h2>User Interactions</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Action</th>
+        <th>Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Login</td>
+        <td>2023-05-20 10:30 AM</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Password Reset</td>
+        <td>2023-05-19 03:45 PM</td>
+      </tr>
+      <!-- Add more rows dynamically using JavaScript -->
+    </tbody>
+  </table>
+  
+  <h2>Reset Password</h2>
+  <form id="reset-form">
+    <label for="user-id">User ID:</label>
+    <input type="text" id="user-id" name="user-id" required>
+    <button type="submit" class="button reset-button">Reset Password</button>
+  </form>
+  
+  <script>
+    // JavaScript code
+    document.getElementById("reset-form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      var userId = document.getElementById("user-id").value;
+      
+      // TODO: Implement password reset functionality here
+      // You can make an API call or perform any other necessary actions
+      
+      // Reset the form
+      document.getElementById("reset-form").reset();
+    });
+  </script>
+</body>
+</html>
