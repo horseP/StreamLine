@@ -43,6 +43,18 @@
     .block-button {
       background-color: #f44336;
     }
+    .dotred{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  .dotgreen{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+  }
   </style>
 </head>
 <body>
@@ -60,18 +72,34 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td>Login</td>
-        <td>2023-05-20 10:30 AM</td>
+        <td style="display: flex; align-items: center; ">Online<div class="dotgreen"></div></td>
+        <td>2023-05-20 10:30 PM</td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Password Reset</td>
-        <td>2023-05-19 03:45 PM</td>
+        <td style="display: flex; align-items: center; ">Online<div class="dotgreen"></div></td>
+        <td>2023-02-19 1:45 PM </td>
       </tr>
+      
       <tr>
         <td>3</td>
-        <td>Logout</td>
-        <td>2023-05-18 08:15 AM</td>
+        <td style="display: flex; align-items: center; ">Offline<div class="dotred"></div></td>
+        <td>2023-04-18 08:15 AM</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td style="display: flex; align-items: center; ">Online<div class="dotgreen"></div></td>
+        <td>2023-05-19 03:45 PM </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td style="display: flex; align-items: center; ">Offline<div class="dotred"></div></td>
+        <td>2023-05-18 06:35 AM</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td style="display: flex; align-items: center; ">Offline<div class="dotred"></div></td>
+        <td>2023-05-18 11:00 AM</td>
       </tr>
       <!-- Add more rows dynamically using JavaScript -->
     </tbody>
