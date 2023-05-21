@@ -2,7 +2,48 @@
 <html>
 <head>
   <title>Admin Page</title>
-  <link rel="stylesheet" href="admin.css">
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+    
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .edit-button {
+      background-color: #2196F3;
+    }
+    
+    .block-button {
+      background-color: #f44336;
+    }
+  </style>
 </head>
 <body>
   <h1>Admin Page</h1>
@@ -27,18 +68,100 @@
         <td>Password Reset</td>
         <td>2023-05-19 03:45 PM</td>
       </tr>
+      <tr>
+        <td>3</td>
+        <td>Logout</td>
+        <td>2023-05-18 08:15 AM</td>
+      </tr>
       <!-- Add more rows dynamically using JavaScript -->
     </tbody>
   </table>
   
-  <h2>Reset Password</h2>
-  <form id="reset-form">
-    <label for="user-id">User ID:</label>
-    <input type="text" id="user-id" name="user-id" required>
-    <button type="submit" class="button reset-button">Reset Password</button>
-  </form>
+  <h2>User Management</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>nduemmanuel@gmail.com.com</td>
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+      
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>mattgeo123@gmail.com</td>
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+      
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>tonymarcus2gmail.com</td>
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+       
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>princeadeola@gmail.com</td> 
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+        
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>otiprince98@gmail.com</td>
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>ndudebby@gmail.com</td>
+        <td>
+          <input type="password" value="password1" disabled>
+        </td>
+        <td>
+          <button class="button edit-button">Edit</button>
+          <button class="button block-button">Block</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
   
-  <script>
+  <!-- <script>
     // JavaScript code
     document.getElementById("reset-form").addEventListener("submit", function(event) {
       event.preventDefault(); // Prevent form submission
@@ -50,7 +173,8 @@
       
       // Reset the form
       document.getElementById("reset-form").reset();
-    });
-  </script>
+    }); -->
+
+  
 </body>
 </html>
