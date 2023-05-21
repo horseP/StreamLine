@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Admin Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <style>
     /* CSS styles */
     body {
@@ -123,8 +124,8 @@
           <input type="password" value="password1" disabled>
         </td>
         <td>
-          <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button edit-button" onclick="resetPasswordButton">Edit</button>
+          <button class="button save-button" onclick="saveButton">Save</button>
         </td>
       
       </tr>
@@ -136,7 +137,7 @@
         </td>
         <td>
           <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button save-button">Save</button>
         </td>
       
       </tr>
@@ -148,7 +149,7 @@
         </td>
         <td>
           <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button save-button" onclick="saveButton">Save</button>
         </td>
        
       </tr>
@@ -160,7 +161,7 @@
         </td>
         <td>
           <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button save-button">Save</button>
         </td>
         
       </tr>
@@ -172,7 +173,7 @@
         </td>
         <td>
           <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button save-button">Save</button>
         </td>
       </tr>
       <tr>
@@ -183,11 +184,12 @@
         </td>
         <td>
           <button class="button edit-button">Edit</button>
-          <button class="button block-button">Block</button>
+          <button class="button save-button">Save</button>
         </td>
       </tr>
     </tbody>
   </table>
+  <script src="adminpagee.js"></script>
   
   <!-- <script>
     // JavaScript code
